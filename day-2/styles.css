@@ -1,48 +1,114 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
+
 header {
     text-align: center;
+    background-color: #fff;
+    padding: 20px;
 }
-img{
-    display:block;
+
+header img {
+    display: block;
     margin: 0 auto;
 }
+
 h1 {
-    color:#0040df
+    color: #0040df;
 }
-h2{
-    color:#0040df
-}
+
 nav {
     background-color: black;
     text-align: center;
+    padding: 10px 0;
 }
-.ulcls{
+
+.ulcls {
     list-style-type: none;
-    
+    padding: 0;
+    margin: 0;
 }
-.licls{
+
+.licls {
     color: whitesmoke;
     display: inline-block;
     padding: 10px 20px;
 }
-p{
-    font-size: small;
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    padding: 10px 20px;
 }
-section{
-    background-color:white;
-    margin: 10px;
-    border-radius: 5px ;
+
+a:hover {
+    box-shadow: 10px 10px 10px rgba(26, 189, 218, 0.3);
+    border-radius: 20px;
+    background-color: rgba(26, 189, 218, 0.1);
 }
-.main{
-    background-color: gray;
-    padding: 4px;
-}
-footer{
+
+footer {
     color: white;
     text-align: center;
     background-color: black;
     padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    background-color: gray;
+    padding: 20px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 10px;
+    text-align: center;
+}
+
+.card {
+    background-color: #e0e0e0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+}
+
+.card h3 {
+    color: #0040df;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: small;
+    color: #555;
+}
+.mail{
+    color: #0040df;
 }
